@@ -1,0 +1,171 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 7px #4841412b;
+   
+}.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    background-size: 100% 100%
+}
+.section-one{
+    color: white;
+    margin: auto;
+}
+#heading{
+    padding-right: 4rem;
+    margin-left: 8.5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 0rem;
+}
+#para{
+    margin-left: 8.4rem;
+    padding-right: 3rem;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+.section-two{
+    display: grid;
+    grid-template-rows: 9% 57%;
+    grid-template-columns: 79%;
+    grid-gap: 2rem;
+    align-content: center;
+    border-radius: 1rem;
+}
+.section-two>:nth-child(1)
+{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    font-size: 14px;
+    border-radius: .5rem;
+    box-shadow: 1px 7px #4841412b;
+}
+.section-two>:nth-child(2)
+{
+    background-color: white;
+    text-align: center;
+    color: hsl(249, 10%, 26%) ;
+    font-size: 14px;
+    border-radius: .5rem;
+    margin-top: -0.8rem;
+    box-shadow: 1px 7px #4841412b;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin-top: 1.4rem;
+}
+input{
+    width: 80%;
+    margin-left: 2.7rem;
+    margin-top: 0.8rem;
+    height: 12%;
+    border-color: hsl(246deg 25% 77% / 44%);
+    border-style: solid;
+    border-width: .1rem;
+    border-radius: 0.3rem;
+}
+input:focus{
+    outline:none;
+    border: 0.1rem solid hsl(248, 32%, 49%);
+    font-weight: 600;
+}
+
+label.error {
+    color:  hsl(0, 100%, 74%) ;
+    justify-self: end;
+    font-weight: 500;
+    font-size: 10px;
+    font-style: italic;
+    text-align: end;
+    padding-right: 3rem;
+  }
+  .button{
+    color: white;
+    background-color:  hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: inset -1px -2px 0px 0px #4f92519c;
+    height: 14%;
+    width: 82%;
+    margin-left: 2.7rem;
+    margin-top: 0.8rem;
+}
+.button:focus {
+    background-color:  hsl(153, 61%, 65%);
+    cursor: pointer;
+}#text{
+    color:  hsl(246, 25%, 77%);
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: -0.1rem
+}
+@media screen and (max-width:40rem) {
+    html,body{
+        height: 100%;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: 1px 7px #4841412b; 
+    }
+    .container{
+        
+        background-image: url(./images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%) ;
+        background-size: cover;
+        grid-template-rows: 0fr 1fr;
+        grid-template-columns: 100%;
+    } 
+    #heading{ 
+    padding-right: 3rem;
+    margin-left: 5rem;
+    margin-top: 5.5rem;
+    margin-bottom: 0rem;
+    font-size: 28px;
+    }
+    #para{
+        margin-left: 2rem;
+        padding-right: 2rem;
+        font-size: 16px;
+        margin-bottom: 2rem;
+        text-align: center;
+        line-height: 160%;
+    }
+    .section-one{
+        margin: unset;
+    }
+    .section-two {
+        grid-template-rows: 16% 57%;
+        grid-template-columns: 79%;
+        grid-gap: 2rem;
+        justify-content: center;
+        align-content: unset;
+       
+    }
+    .section-two>:nth-child(1)
+{
+   
+    padding-top: 1rem;
+    font-size: 19px;
+    border-radius: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+input{
+    margin-left: 1.7rem;
+}
+    
+.button{
+    margin-left: 1.7rem;
+}
+#text{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+}
